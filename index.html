@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tricity Thyrocare Collection Centre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>☎ 8178009011</span>
+  <span>✉ tricitythyrocarecollection@gmail.com</span>
+  <span>📍 394 Modern Complex, Zirakpur, Punjab</span>
+</div>
+
+<header>
+  <div class="logo">✚ <span>Tricity <b>Thyrocare</b><small>Collection Centre</small></span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#packages">Packages</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book Test</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="call" href="tel:8178009011">☎ Call Now<br>8178009011</a>
+</header>
+
+<section class="hero" id="home">
+  <div class="heroText">
+    <p class="tag">━ Trusted Diagnostic Partner</p>
+    <h1>Good Health Starts<br><span>With Right Tests</span></h1>
+    <p>At Tricity Thyrocare Collection Centre, we bring you accurate reports, convenient sample collection and caring support for your health.</p>
+    <div class="buttons">
+      <a href="#booking" class="btn red">▣ Book a Test</a>
+      <a href="#packages" class="btn outline">◉ View Packages</a>
+    </div>
+    <div class="trust">
+      <span>✓ Accurate Results</span><span>⚙ Modern Technology</span>
+      <span>✓ Trained Staff</span><span>⌂ Home Collection</span>
+    </div>
+  </div>
+  <div class="heroImage">
+    <img src="assets/aarogyam-page-1.jpg" alt="Health Package">
+  </div>
+</section>
+
+<section class="packages" id="packages">
+  <div class="heading">
+    <p class="tag">━ Our Popular Packages</p>
+    <h2>Aarogyam Health Packages</h2>
+    <p>Health package information and visuals are based on the uploaded Aarogyam brochure.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><img src="assets/aarogyam-page-1.jpg"><h3>Aarogyam P Pro Package</h3><p>71 parameters</p><button onclick="showPackage(0)">View Details →</button></div>
+    <div class="card"><img src="assets/aarogyam-page-2.jpg"><h3>Profile Details</h3><p>Thyroid • Lipid • Liver • Kidney</p><button onclick="showPackage(1)">View Details →</button></div>
+    <div class="card"><img src="assets/aarogyam-page-3.jpg"><h3>Preventive Health Offer</h3><p>Up to 50% OFF</p><button onclick="showPackage(2)">View Details →</button></div>
+    <div class="card"><img src="assets/aarogyam-page-5.jpg"><h3>Aarogyam Camp Packages</h3><p>Camp Profile 1, 2 & 3</p><button onclick="showPackage(3)">View Details →</button></div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <h2>Why Choose Tricity Thyrocare?</h2>
+  <div class="whyGrid">
+    <div>🛡️<b>Trusted</b><small>Diagnostic Service</small></div>
+    <div>🧪<b>Quality Testing</b><small>Reliable Process</small></div>
+    <div>✓<b>Accurate</b><small>Reliable Reports</small></div>
+    <div>⌂<b>Convenient</b><small>Home Collection</small></div>
+    <div>♥<b>Caring</b><small>Support Team</small></div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="heading left"><p class="tag">━ Our Services</p><h2>More Than Just Tests</h2><p>Convenient diagnostic services for your healthcare needs.</p></div>
+  <div class="serviceGrid">
+    <div>🩸<b>Pathology Tests</b></div>
+    <div>▣<b>Radiology & Imaging</b></div>
+    <div>♥<b>Health Checkup Packages</b></div>
+    <div>⌂<b>Home Collection</b></div>
+    <div>▤<b>Report Assistance</b></div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div>
+    <p class="tag">━ BOOK YOUR TEST</p>
+    <h2>Quick & Easy Booking</h2>
+    <p>Choose your package, select a date and time slot, fill your details and confirm through WhatsApp.</p>
+    <div class="steps">
+      <span>1<br><b>Select Test</b></span><span>2<br><b>Choose Date</b></span>
+      <span>3<br><b>Fill Details</b></span><span>4<br><b>Confirmation</b></span>
+    </div>
+    <p>☎ Need Help? Call us at <b>8178009011</b></p>
+  </div>
+  <form onsubmit="book(event)">
+    <h3>Book Your Test Now</h3>
+    <input id="name" placeholder="Full Name" required>
+    <input id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+    <select id="package" required><option value="">Select Package / Test</option><option>Aarogyam P Pro Package</option><option>Profile Details</option><option>Preventive Health Offer</option><option>Aarogyam Camp Package</option><option>Individual Test</option></select>
+    <input id="date" type="date" required>
+    <select id="time" required><option value="">Select Time Slot</option><option>08:00 AM - 09:00 AM</option><option>09:00 AM - 10:00 AM</option><option>10:00 AM - 11:00 AM</option><option>11:00 AM - 12:00 PM</option><option>04:00 PM - 05:00 PM</option><option>05:00 PM - 06:00 PM</option></select>
+    <input id="address" placeholder="Address (optional)">
+    <button class="btn red" type="submit">◉ Book via WhatsApp</button>
+  </form>
+</section>
+
+<footer id="contact">
+  <div><h3>✚ Tricity <span>Thyrocare</span></h3><p>Collection Centre</p></div>
+  <div><b>Contact Us</b><p>☎ 8178009011</p><p>✉ tricitythyrocarecollection@gmail.com</p><p>📍 394 Modern Complex, Zirakpur, Punjab</p></div>
+  <div><b>Follow Us</b><p>Instagram &nbsp; Facebook</p></div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modalBox"><button onclick="closePackage()">×</button><img id="modalImg"><h2 id="modalTitle"></h2><p id="modalText"></p><a href="#booking" onclick="closePackage()" class="btn red">Book This Package</a></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
